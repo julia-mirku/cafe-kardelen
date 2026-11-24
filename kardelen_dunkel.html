@@ -10,7 +10,7 @@
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;700;800&amp;family=Reddit+Sans:wght@400;500;700&amp;family=Mali:wght@400;600;700&amp;family=Gelasio:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#140e0a;
@@ -27,8 +27,8 @@
   --copper:#c8742c;
   --ember:#b5452f;
   --ink:#140e0a;
-  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
-  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --display:"Gabarito","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Reddit Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
   --herring:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24' viewBox='0 0 48 24'%3E%3Cpath d='M0 -12l24 24L48 -12M0 0l24 24L48 0M0 12l24 24L48 12' fill='none' stroke='%23ffd28a' stroke-opacity='.13'/%3E%3C/svg%3E");
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -1047,7 +1047,7 @@ address .nm{color:var(--gold)}
 .doodle{position:absolute;top:10px;right:18px;width:52px;height:46px;color:rgba(241,236,224,.62)}
 .hours{table-layout:fixed}
 .hours th,.hours td{
-  font-family:"Kalam","Segoe Print","Bradley Hand",cursive;font-size:1.32rem;line-height:1.25;color:#f1ece0;padding:8px 8px;
+  font-family:"Mali","Segoe Print","Bradley Hand",cursive;font-size:1.32rem;line-height:1.25;color:#f1ece0;padding:8px 8px;
   border-bottom:1.5px dashed rgba(241,236,224,.2);text-shadow:0 0 1px rgba(241,236,224,.55),0 0 8px rgba(241,236,224,.1);
 }
 .hours th{width:58%}
@@ -1062,7 +1062,7 @@ address .nm{color:var(--gold)}
 }
 .hours .tag{
   margin-left:10px;padding:0;border-radius:0;background:none;color:#ffc56e;vertical-align:1px;display:inline-block;transform:rotate(-5deg);
-  font-family:"Kalam","Segoe Print",cursive;font-size:1rem;font-weight:700;letter-spacing:0;text-transform:none;
+  font-family:"Mali","Segoe Print",cursive;font-size:1rem;font-weight:700;letter-spacing:0;text-transform:none;
 }
 .hours .tag::before{content:"← "}
 /* Telefon: die Zeile von heute bleibt einzeilig (ohne Pfeil, «Heute» klein) */
@@ -1575,32 +1575,13 @@ a:focus-visible,button:focus-visible,[role=button]:focus-visible,[tabindex]:focu
 .bk-cv .bk-cv-k{display:none!important}
 .bk-cv .bk-plate{width:clamp(150px,19vh,210px)!important;height:clamp(150px,19vh,210px)!important}
 .plate-lg{width:120px!important;height:120px!important}
-</style>
-<style id="vw-css">
-.vw-bar{position:relative;z-index:200;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 16px;margin:0;padding:8px 14px;
-  background:#fffdf6;color:#2a2622;border:2px dashed #8a7f70;font:500 14px/1.35 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;letter-spacing:0;text-transform:none;text-align:center}
-.vw-bar *{box-sizing:border-box}
-.vw-l{font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12.5px}
-.vw-b{display:inline-flex;border:1.5px solid #2a2622;border-radius:999px;overflow:hidden;background:#fff}
-.vw-a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:92px;padding:6px 18px;color:#2a2622;background:#fff;text-decoration:none;font-weight:700;font-size:15px}
-.vw-a + .vw-a{border-left:1.5px solid #2a2622}
-.vw-a[aria-current="true"]{background:#2a2622;color:#fff}
-.vw-a:hover{background:#ece6da}
-.vw-a[aria-current="true"]:hover{background:#2a2622}
-.vw-a:focus-visible{outline:3px solid #b5372a;outline-offset:-3px}
-.vw-n{flex:1 1 260px;max-width:520px;font-size:13px;color:#4a443d}
-@media (max-width:560px){.vw-n{flex-basis:100%}}
-@media (max-width:699px){.vw-n{display:none}.vw-bar{padding:5px 10px;gap:6px 12px}.vw-a{min-height:36px;padding:4px 16px}}
+/* V6 24.11: Deckel der Karte in Safari/WebKit – Innenseite liegt sonst über der Vorderseite */
+.bk[data-state="closed"] .bk-inner{visibility:hidden;transition:visibility 0s .5s}
+/* V6 24.11: Kopfleiste deckend, nichts scheint durch (390) */
+.top{background:#140E0A!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 </style>
 </head>
 <body>
-<div class="vw-bar" role="region" aria-label="Variante wählen, nur im Entwurf sichtbar" lang="de">
-<span class="vw-l">Variante wählen</span>
-<span class="vw-b"><a class="vw-a" href="kardelen_hell.html">Hell</a><a class="vw-a" href="kardelen_dunkel.html" aria-current="true">Dunkel</a></span>
-<span class="vw-n">Diese Leiste sehen nur Sie im Entwurf. Auf der fertigen Website erscheint sie nicht.</span>
-</div>
-
-<div class="ribbon">Entwurf – nur zur Ansicht</div>
 
 <!-- Stern-Symbol für Bewertungen -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
