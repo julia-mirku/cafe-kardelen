@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Datenschutz · Café Kardelen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800&amp;family=Reddit+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF3E6;--fg:#2A1C14;--muted:#5A473B;--acc:#7E1F2C;--acc-dark:#641824;--line:rgba(181,135,43,.55);--on:#FFFFFF}
+html.dunkel{--bg:#140e0a;--fg:#f4e9d6;--muted:#d0bfa5;--acc:#ffd28a;--acc-dark:#e9a23b;--line:rgba(255,210,138,.26);--on:#140e0a}
+*{box-sizing:border-box}html,body{margin:0}
+body{min-height:100vh;background:var(--bg);color:var(--fg);font:400 17px/1.6 "Reddit Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;display:flex;align-items:center;justify-content:center;padding:48px 16px}
+main{width:100%;max-width:560px;text-align:center}
+.logo{display:block;margin:0 auto 26px;width:124px;height:auto}
+html.dunkel .logo{filter:invert(1) hue-rotate(180deg) brightness(1.1)}
+.k{display:block;font-family:"Gabarito",system-ui,sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+h1{font-family:"Gabarito",system-ui,sans-serif;font-weight:800;font-size:clamp(2.2rem,6vw,3rem);line-height:1.08;letter-spacing:-.02em;margin:0 0 18px;color:var(--acc)}
+p{margin:0 0 30px;padding-bottom:26px;border-bottom:1px solid var(--line);color:var(--muted)}
+a.back{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 22px;border:1.5px solid var(--acc);border-radius:999px;color:var(--acc);text-decoration:none;font-weight:700;transition:background-color .2s,color .2s,transform .2s}
+a.back:hover,a.back:focus-visible{background:var(--acc);color:var(--on);transform:translateY(-1px)}
+</style>
+<script>if(location.hash==='#dunkel')document.documentElement.className='dunkel';</script>
+</head><body><main>
+<img class="logo" src="kd_logo.png" alt="Café Kardelen" width="124" height="86">
+<span class="k">Café Kardelen</span>
+<h1>Datenschutz</h1>
+<p>Wird bei Fertigstellung der Website ergänzt.</p>
+<a class="back" id="back" href="index.html">← Zurück zur Startseite</a>
+</main>
+<script>if(location.hash==='#dunkel')document.getElementById('back').href='kardelen_dunkel.html';</script>
+</body></html>
